@@ -1,116 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en-US">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WDD 131 – Dynamic Web Fundamentals – Sarah Itse</title>
 
-    <title>WDD 131 – Dynamic Web Fundamentals – Sarah Itse</title>
+  <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, Sarah Itse, HTML, CSS, JavaScript web development">
+  <meta name="author" content="Sarah Itse">
 
-    <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals, Sarah, HTML, CSS, JavaScript, web development">
+  <link rel="stylesheet" href="styles/base.css">
 
-    <meta name="author" content="Sarah Itse">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="styles/base.css">
-
-    l<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-    <script src="scripts/getdates.js" defer></script>
+  <script src="scripts/getdates.js" defer></script>
 </head>
 
 <body>
 
-    <header>
+<header>
+  <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
 
-        <span id="course-title">
-            WDD 131 - Dynamic Web Fundamentals
-        </span>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
 
-        <nav>
+<main>
+  <h1>Sarah Itse</h1>
 
-            <a href="https://www.linkedin.com/" target="_blank">
-                LinkedIn
-            </a>
+  <!-- CARD 1 -->
+  <section class="card">
+    <h2>About Me</h2>
+    <img src="images/profile.jpg" alt="Sarah profile picture">
+    <p>My name is Sarah Itse, and I am a passionate web developer with a focus on
+         creating dynamic and engaging user experiences,and i love to create beautiful and functional websites.</p>
+  </section>
 
-            <a href="https://byupw.instructure.com/" target="_blank">
-                Canvas
-            </a>
+  <!-- CARD 2 -->
+  <section class="card">
+    <h2>Nigeria</h2>
+    <img src="images/nigeria.jpg" alt="Nigeria flag">
+    <p>Nigeria is a country in West Africa known for its diverse cultures and
+         rich history. I love exploring its vibrant markets and traditional festivals.</p>
+  </section>
+<!-- CARD 3 -->
+  <section class="card">
+    <h2>Resources</h2>
+    <a href="https://github.com">GitHub</a><br>
+    <a href="https://linkedin.com">LinkedIn</a><br>
+    <a href="https://byu.edu">byu pathway</a>
+  </section>
+</main>
 
-            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7"
-                target="_blank">
-                Scripture
-            </a>
+<footer>
+  <p>
+    © <span id="currentyear"></span> Sarah Itse Nigeria
+  </p>
 
-            <a href="#">
-                Final Project
-            </a>
-
-        </nav>
-
-    </header>
-
-    <main>
-
-        <h1>Sarah Itse</h1>
-
-        <section class="card">
-
-            <h2>About Me</h2>
-
-            <div class="about">
-
-                <p>
-                    My name is Sarah Itse and I live in Nigeria. I enjoy learning
-                    web development and improving my skills in HTML, CSS,
-                    and JavaScript. I am passionate about technology,
-                    customer support, virtual assistance, and digital work,i'm also of Byu pathway student
-                    and i look forward to building a successful career in technology and web developmennt.
-                </p>
-
-                <img src="images/profile.jpg"
-                    alt="Sarah profile picture">
-
-            </div>
-
-        </section>
-
-        <section class="card">
-
-            <h2>Nigeria</h2>
-
-            <div class="country">
-
-                <img src="images/nigeria.jpg"
-                    alt="Nigeria flag">
-
-                <p>
-                    Nigeria is located in West Africa and is known for
-                    its rich culture, music, food, and hardworking
-                    people. Lagos is one of the largest cities in Africa
-                    and an important center for technology and business.
-                    I love Nigeria and am proud to call it my Home.
-                </p>S
-
-            </div>
-
-        </section>
-
-    </main>
-
-    <footer>
-
-        <p>
-            © <span id="currentyear"></span>
-            🌸 Sarah Itse 🌸 Nigeria
-        </p>
-
-        <p id="lastModified"></p>
-
-    </footer>
+  <p id="lastModified"></p>
+</footer>
 
 </body>
-
 </html>

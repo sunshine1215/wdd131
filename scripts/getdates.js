@@ -1,6 +1,8 @@
-const currentYear = new Date().getFullYear();
+const yearSpan = document.getElementById("currentyear");
+const lastModified = document.getElementById("lastModified");
 
-document.getElementById("currentyear").textContent = currentYear;
+// Insert current year
+yearSpan.textContent = new Date().getFullYear();
 
-document.getElementById("lastModified").textContent =
-  `Last Modified: ${document.lastModified}`;
+// Insert last modified date
+lastModified.textContent = `Last Modified: ${document.lastModified}`;
