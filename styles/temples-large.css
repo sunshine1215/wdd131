@@ -1,0 +1,22 @@
+/* Show nav normally on large screens */
+@media (min-width: 768px) {
+
+  #menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: flex !important;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 1rem 2rem;
+  }
+
+  /* 3-column grid */
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
