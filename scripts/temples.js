@@ -1,20 +1,21 @@
-// Hamburger menu toggle
-const menuBtn = document.getElementById("menu-btn");
-const navMenu = document.getElementById("nav-menu");
+// Hamburger Menu
+const menuButton = document.querySelector("#menu-btn");
+const navigation = document.querySelector("#nav-menu");
 
-menuBtn.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
+menuButton.addEventListener("click", () => {
+    navigation.classList.toggle("show");
 
-  // Change icon
-  if (navMenu.classList.contains("show")) {
-    menuBtn.textContent = "✖";
-  } else {
-    menuBtn.textContent = "☰";
-  }
+    if (navigation.classList.contains("show")) {
+        menuButton.textContent = "✖";
+    } else {
+        menuButton.textContent = "☰";
+    }
 });
 
-// Footer year
-document.getElementById("year").textContent = new Date().getFullYear();
+// Current Year
+document.querySelector("#year").textContent =
+new Date().getFullYear();
 
-// Last modified
-document.getElementById("lastModified").textContent = document.lastModified;
+// Last Modified Date
+document.querySelector("#lastModified").textContent =
+document.lastModified;
