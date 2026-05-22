@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nigeria – Country Page</title>
+  <link rel="stylesheet" href="styles/place.css" />
+  <script src="scripts/place.js" defer></script>
+</head>
+<body>
+
+  <header>
+    <h1>Nigeria</h1>
+  </header>
+
+  <main>
+    <!-- Hero Image with srcset -->
+    <div class="hero">
+      <picture>
+        <source
+          media="(min-width: 768px)"
+          srcset="images/hero.webp" />
+        <img
+          src="images/hero.webp"
+          alt="Beautiful landscape of Nigeria"
+          loading="eager" />
+      </picture>
+    </div>
+
+    <div class="content-grid">
+
+      <!-- Data Section -->
+      <section class="data-card">
+        <h2>Data</h2>
+        <table>
+          <tr><td>Area:</td><td>923,768 sq km</td></tr>
+          <tr><td>Population:</td><td>223,804,632</td></tr>
+          <tr><td>Capital:</td><td>Abuja</td></tr>
+          <tr><td>Language:</td><td>English</td></tr>
+          <tr><td>Currency:</td><td>Nigerian Naira</td></tr>
+          <tr><td>Time Zone:</td><td>UTC+1</td></tr>
+          <tr><td>Calling Code:</td><td>+234</td></tr>
+          <tr><td>Internet TLD:</td><td>.ng</td></tr>
+        </table>
+      </section>
+
+      <!-- Weather Section -->
+      <section class="weather-card">
+        <h2 class="weather-heading">Weather</h2>
+        <p>Temperature: <span id="temperature">32°C</span></p>
+        <p>Conditions: <span id="conditions">Partly Cloudy</span></p>
+        <p>Wind: <span id="wind">5 km/h</span></p>
+        <p>Wind Chill: <span id="wind-chill"></span></p>
+        <!-- SVG weather icon for mobile -->
+        <img class="weather-icon-svg" src="images/partly-cloudy.svg" alt="Partly Cloudy" />
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+  <p>&copy; <span id="current-year"></span> 🌷Sarah Itse🌷Nigeria</p>
+  <p>Last Modified: <span id="last-modified"></span></p>
+</footer>
+
+</body>
+</html>

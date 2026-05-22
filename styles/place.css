@@ -1,0 +1,187 @@
+/* ===== Global CSS Variables ===== */
+:root {
+  --green: #008751;
+  --white: #ffffff;
+  --light-green: #e8f5e9;
+  --dark-green: #005a35;
+  --text-dark: #1a1a1a;
+  --text-light: #f9f9f9;
+  --card-bg: rgba(255, 255, 255, 0.92);
+  --shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  --font-heading: 'Georgia', serif;
+  --font-body: 'Trebuchet MS', sans-serif;
+  --radius: 10px;
+}
+/* ===== Reset & Base ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--light-green);
+  color: var(--text-dark);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== Header ===== */
+header {
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1.2rem 1rem;
+}
+
+header h1 {
+  font-family: var(--font-heading);
+  font-size: 1.3rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* ===== Hero Image ===== */
+.hero {
+  width: 100%;
+  max-height: 300px;
+
+}
+
+.hero picture,
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ===== Content Grid (Mobile First: stacked) ===== */
+.content-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 1.2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* ===== Cards ===== */
+.data-card,
+.weather-card {
+  background-color: var(--card-bg);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
+
+}
+
+.data-card h2,
+.weather-card h2 {
+  font-family: var(--font-heading);
+  background-color: var(--green);
+  color: var(--white);
+  padding: 0.3rem 0.5rem;
+  border-radius: 3px;
+  margin-bottom: 0.5rem;
+  font-size: 1.8rem;
+  display: inline-block;
+}
+
+/* ===== Data Table ===== */
+table {
+  width: 40%;
+  font-size: 1.0rem;
+  text-align: left;
+
+  
+}
+
+table tr td {
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #d4edda;
+}
+
+table tr td:first-child {
+  font-weight: bold;
+  color: var(--dark-green);
+  width: 45%;
+}
+
+/* ===== Weather Card ===== */
+.weather-card p {
+  padding: 0.3rem 0;
+  font-size: 0.95rem;
+  border-bottom: 1px solid #d4edda;
+}
+
+.weather-card p:last-of-type {
+  border-bottom: none;
+}
+
+/* SVG icon — visible on mobile only */
+.weather-icon-svg {
+  width: 48px;
+  margin-top: 0.8rem;
+  display: block;
+}
+
+/* ===== Weather heading pseudo-element (wider view) ===== */
+/* Hidden on mobile, shown on wider screens via media query */
+.weather-heading::after {
+  content: none;
+  margin-left: 0.5rem;
+  font-size: 1.2rem;
+}
+
+/* ===== Footer ===== */
+footer {
+  margin-top: auto;
+  background-color: var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 1rem;
+  font-size: 1.1rem;
+}
+
+/* ===== Media Query: Wider View (768px+) ===== */
+@media (min-width: 500px) {
+
+  header h1 {
+    font-size: 2.6rem;
+  }
+
+  .content-grid {
+    flex-direction: row;
+    align-items:flex-start;
+    padding: 1.5rem 2rem;
+  }
+
+  .data-card {
+    flex: 2;
+      min-width: 100px;
+      margin-left: 1.5rem;
+      max-width: 300px;
+  }
+
+  .weather-card {
+    flex: 1;
+    min-width: 220px;
+    max-width: 300px;
+  }
+
+  /* Hide SVG icon on wider view — use pseudo-element instead */
+  .weather-icon-svg {
+    display: none;
+  }
+
+  /* Show emoji icon via pseudo-element after "Weather" heading */
+  .weather-heading::after {
+    content: "⛅️";
+    margin-left: 0.5rem;
+    font-size: 1.2rem;
+  }
+}
