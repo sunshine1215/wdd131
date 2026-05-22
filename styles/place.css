@@ -42,43 +42,57 @@ header h1 {
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
-
-/* ===== Hero Image ===== */
+/* ===== Hero Container with overlapping cards ===== */
 .hero {
+  position: relative;
   width: 100%;
-  max-height: 300px;
-
 }
 
 .hero picture,
 .hero img {
   width: 100%;
-  height: 100%;
+  height: 700px;;
   object-fit: cover;
   display: block;
 }
 
-/* ===== Content Grid (Mobile First: stacked) ===== */
 .content-grid {
-  display: flex;
-  flex-direction: column;
-  gap: 1.2rem;
-  padding: 1.2rem;
-  max-width: 700px;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+  pointer-events: all;
 }
 
-/* ===== Cards ===== */
-.data-card,
-.weather-card {
-  background-color: var(--card-bg);
+.data-card {
+  align-self: flex-start;
+  pointer-events: all;
+  background-color: rgba(255, 255, 255, 0.85);
   border-radius: var(--radius);
-  padding: 1.2rem;
+  padding: 0.8rem;
   box-shadow: var(--shadow);
-
+  max-width: 45%;
+  font-size: 0.8rem;
+  margin-top: 60px;
 }
 
+.weather-card {
+  align-self: flex-end;
+  pointer-events: all;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: var(--radius);
+  padding: 0.8rem;
+  box-shadow: var(--shadow);
+  max-width: 45%;
+  font-size: 0.8rem;
+  margin-bottom: 1px;
+}
 .data-card h2,
 .weather-card h2 {
   font-family: var(--font-heading);
