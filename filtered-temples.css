@@ -31,6 +31,13 @@ nav {
   gap: 10px;
 }
 
+nav a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+}
+
 nav button {
   padding: 10px 15px;
   border: none;
