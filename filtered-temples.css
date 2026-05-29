@@ -103,3 +103,13 @@ footer {
   color: white;
   font-size: 14px;
 }
+@media (max-width: 768px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #temple-container {
+    grid-template-columns: 1fr;
+  }
+}
