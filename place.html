@@ -1,90 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore Nigeria's culture, weather, geography, and beautiful landscapes on this country page project.">
+
+  <meta name="description"
+    content="Explore Nigeria's culture, weather, geography, and beautiful landscapes on this country page project.">
+
   <meta name="author" content="Sarah Itse">
 
   <title>Nigeria – Country Page</title>
 
+  <!-- GOOGLE FONTS -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+
   <link rel="stylesheet" href="styles/place.css">
+
+  <!-- JAVASCRIPT -->
+
   <script src="scripts/place.js" defer></script>
+
 </head>
+
 <body>
+
+  <!-- HEADER -->
+
   <header>
     <h1>Nigeria</h1>
   </header>
 
+  <!-- MAIN -->
+
   <main>
-    <!-- Hero Image with srcset -->
+
+    <!-- HERO IMAGE -->
+
     <div class="hero">
+
       <picture>
 
-  <source
-    media="(min-width: 768px)"
-    srcset="images/nigeria-large.webp"
-  >
+        <source
+          media="(min-width: 768px)"
+          srcset="images/nigeria-large.webp">
 
-  <img
-    src="images/nigeria-small.webp"
-    alt="Beautiful landscape of Nigeria"
-  >
+        <img
+          src="images/nigeria-small.webp"
+          alt="Beautiful landscape of Nigeria">
 
-</picture>
+      </picture>
+
     </div>
+
+    <!-- CONTENT GRID -->
 
     <div class="content-grid">
 
-      <!-- Data Section -->
+      <!-- DATA SECTION -->
+
       <section class="data-card">
+
         <h2>Data</h2>
+
         <table>
-          <tr><td>Area:</td><td>923,768 sq km</td></tr>
-          <tr><td>Population:</td><td>223,804,632</td></tr>
-          <tr><td>Capital:</td><td>Abuja</td></tr>
-          <tr><td>Language:</td><td>English</td></tr>
-          <tr><td>Currency:</td><td>Nigerian Naira</td></tr>
-          <tr><td>Time Zone:</td><td>UTC+1</td></tr>
-          <tr><td>Calling Code:</td><td>+234</td></tr>
-          <tr><td>Internet TLD:</td><td>.ng</td></tr>
+
+          <tr>
+            <td><strong>Area:</strong></td>
+            <td>923,768 sq km</td>
+          </tr>
+
+          <tr>
+            <td><strong>Population:</strong></td>
+            <td>223,804,632</td>
+          </tr>
+
+          <tr>
+            <td><strong>Capital:</strong></td>
+            <td>Abuja</td>
+          </tr>
+
+          <tr>
+            <td><strong>Language:</strong></td>
+            <td>English</td>
+          </tr>
+
+          <tr>
+            <td><strong>Currency:</strong></td>
+            <td>Nigerian Naira</td>
+          </tr>
+
+          <tr>
+            <td><strong>Time Zone:</strong></td>
+            <td>UTC+1</td>
+          </tr>
+
+          <tr>
+            <td><strong>Calling Code:</strong></td>
+            <td>+234</td>
+          </tr>
+
+          <tr>
+            <td><strong>Internet TLD:</strong></td>
+            <td>.ng</td>
+          </tr>
+
         </table>
+
       </section>
+
+      <!-- WEATHER SECTION -->
 
       <section class="weather">
 
-  <h2>Weather</h2>
+        <h2>Weather</h2>
 
-  <!-- SVG ICON -->
+        <!-- SVG ICON -->
 
-  <img
-    src="images/weather.svg"
-    alt="Weather icon"
-    class="weather-icon"
-  >
+        <img
+          src="images/weather.svg"
+          alt="Weather icon"
+          class="weather-icon">
 
-  <div class="info">
+        <div class="info">
 
-    <p><strong>Temperature:</strong> 8°C</p>
+          <p><strong>Temperature:</strong> 8°C</p>
 
-    <p><strong>Conditions:</strong> Cloudy</p>
+          <p><strong>Conditions:</strong> Cloudy</p>
 
-    <p><strong>Wind Speed:</strong> 10 km/h</p>
+          <p><strong>Wind Speed:</strong> 10 km/h</p>
 
-    <p>
-      <strong>Wind Chill:</strong>
-      <span id="windchill"></span>
-    </p>
+          <p>
+            <strong>Wind Chill:</strong>
+            <span id="windchill"></span>
+          </p>
 
-  </div>
+        </div>
 
-</section>
+      </section>
+
+    </div>
+
   </main>
 
+  <!-- FOOTER -->
+
   <footer>
-  <p>&copy; <span id="current-year"></span> 🌷Sarah Itse🌷Nigeria</p>
-  <p>Last Modified: <span id="last-modified"></span></p>
-</footer>
+
+    <p>
+      &copy; <span id="current-year"></span>
+      🌷Sarah Itse🌷 Nigeria
+    </p>
+
+    <p>
+      Last Modified:
+      <span id="last-modified"></span>
+    </p>
+
+  </footer>
 
 </body>
+
 </html>
