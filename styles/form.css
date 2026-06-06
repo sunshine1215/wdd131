@@ -80,6 +80,7 @@ legend {
   margin-bottom: 0.5rem;
 }
 
+/* STAR RATING */
 .star-group {
   display: flex;
   justify-content: space-between;
@@ -96,7 +97,6 @@ legend {
 .star-option label {
   font-size: 1.2rem;
   cursor: pointer;
-  margin-bottom: 0;
 }
 
 .star-option input[type="radio"] {
@@ -105,7 +105,7 @@ legend {
   cursor: pointer;
 }
 
-/* Checkboxes */
+/* CHECKBOXES */
 .checkbox-group {
   display: flex;
   flex-direction: column;
@@ -151,6 +151,23 @@ footer {
   text-align: center;
   padding: 1.2rem;
   margin-top: 1.5rem;
-  line-height: 1.8;
   font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+/* MEDIA QUERY */
+@media (max-width: 600px) {
+  main {
+    padding: 0 0.5rem;
+  }
+
+  .star-group {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
 }
