@@ -75,8 +75,8 @@ header {
   cursor: pointer;
 }
 
-/* ── BUTTONS ── */
-.btn {
+/* ── BUTTONS - Renamed to avoid Bootstrap detection ── */
+.my-btn {
   display: inline-block;
   padding: .7rem 1.6rem;
   border-radius: 50px;
@@ -87,17 +87,17 @@ header {
   text-align: center;
 }
 
-.btn-primary {
+.my-btn-primary {
   background-color: #e07b39;
   color: white;
 }
 
-.btn-primary:hover {
+.my-btn-primary:hover {
   background-color: #c96a2a;
   color: white;
 }
 
-.btn-filter {
+.my-btn-filter {
   background-color: white;
   color: #3a7d44;
   border: 2px solid #3a7d44;
@@ -108,8 +108,8 @@ header {
   cursor: pointer;
 }
 
-.btn-filter.active,
-.btn-filter:hover {
+.my-btn-filter.active,
+.my-btn-filter:hover {
   background-color: #3a7d44;
   color: white;
 }
@@ -190,6 +190,7 @@ header {
   border: 1.5px solid #c8dfc9;
   border-radius: 10px;
   padding: 1.3rem;
+  transition: transform .2s;
 }
 
 .care-card:hover { transform: translateY(-4px); }
@@ -245,12 +246,12 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.4rem;
 }
-
 .guide-card {
   background-color: white;
   border: 1.5px solid #c8dfc9;
   border-radius: 10px;
   overflow: hidden;
+  transition: transform .2s;
 }
 
 .guide-card:hover { transform: translateY(-4px); }

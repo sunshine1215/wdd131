@@ -88,6 +88,80 @@ const quizQuestions = [
     options: ["Every 5 years", "Only when sick", "At least once a year", "Every month"],
     answer: 2,
     explanation: "Pets should have a check-up at least once a year, twice for senior pets."
+  },
+
+  // New questions
+  {
+    question: "Which human food is TOXIC to dogs and cats?",
+    options: ["Chicken", "Carrots", "Chocolate", "Rice"],
+    answer: 2,
+    explanation: "Chocolate contains theobromine which is poisonous to pets. Even small amounts can be dangerous."
+  },
+  {
+    question: "How often should you brush a long-haired cat?",
+    options: ["Once a year", "Once a week", "Daily", "Never"],
+    answer: 2,
+    explanation: "Daily brushing prevents matting and reduces hairballs in long-haired breeds."
+  },
+  {
+    question: "What does a wagging tail ALWAYS mean?",
+    options: ["The dog is happy", "The dog wants food", "The dog could be alert or anxious", "The dog is sleepy"],
+    answer: 2,
+    explanation: "Tail wagging shows arousal, not just happiness. Look at body language too."
+  },
+  {
+    question: "How much water should a 10kg dog drink per day?",
+    options: ["50ml", "500ml - 1 liter", "5 liters", "Only when thirsty"],
+    answer: 1,
+    explanation: "Dogs need about 50-60ml per kg daily. So 10kg dog = 500-600ml water."
+  },
+  {
+    question: "At what age can kittens eat solid food?",
+    options: ["2 weeks", "4-6 weeks", "3 months", "6 months"],
+    answer: 1,
+    explanation: "Kittens start weaning at 4-6 weeks and can eat soft kitten food."
+  },
+  {
+    question: "Which is a sign of a healthy dog?",
+    options: ["Dry nose always", "Clear eyes, clean ears", "Sneezing constantly", "Sleeping 23 hours"],
+    answer: 1,
+    explanation: "Clear eyes, clean ears, shiny coat, and normal energy = healthy pet."
+  },
+  {
+    question: "How often should you trim a dog's nails?",
+    options: ["Every day", "Every 3-4 weeks", "Once a year", "Never"],
+    answer: 1,
+    explanation: "Most dogs need nail trims every 3-4 weeks to prevent pain and joint issues."
+  },
+  {
+    question: "What's the best way to introduce a new pet to your current pet?",
+    options: ["Let them fight it out", "Slow, supervised introductions", "Keep them in same cage", "Yell at them"],
+    answer: 1,
+    explanation: "Slow introductions with scent swapping reduces stress and fights."
+  },
+  {
+    question: "How many hours do adult cats sleep per day?",
+    options: ["4-6 hours", "8-10 hours", "12-16 hours", "20 hours"],
+    answer: 2,
+    explanation: "Cats are natural sleepers! 12-16 hours daily is normal for adults."
+  },
+  {
+    question: "Which vaccine is REQUIRED by law for dogs in most countries?",
+    options: ["Bordetella", "Rabies", "Lyme", "Flea vaccine"],
+    answer: 1,
+    explanation: "Rabies vaccine is legally required in most countries to protect humans too."
+  },
+  {
+    question: "What should you do if your pet eats something poisonous?",
+    options: ["Wait and see", "Make them vomit", "Call vet/poison control immediately", "Give milk"],
+    answer: 2,
+    explanation: "Call your vet or pet poison hotline ASAP. Don't induce vomiting without advice."
+  },
+  {
+    question: "How often should you clean a litter box?",
+    options: ["Once a month", "Once a week", "Scoop daily, full change weekly", "Never"],
+    answer: 2,
+    explanation: "Scoop daily and do a full litter change weekly to keep cats happy and healthy."
   }
 ];
 
