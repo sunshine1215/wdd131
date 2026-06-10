@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Happy Pets care guide - detailed tips on feeding, grooming, exercise, health, and safety for dogs and cats.">
+  <meta name="author" content="Sarah Itse">
+  <title>Happy Pets - Care Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">🐾 Happy Pets</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="care.html" class="active">Care Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Pet Care Guide</h1>
+      <p>In-depth care tips for your dogs and cats</p>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="filter-btns">
+          <button class="btn btn-filter active" data-filter="all">All</button>
+          <button class="btn btn-filter" data-filter="dog">🐶 Dogs</button>
+          <button class="btn btn-filter" data-filter="cat">🐱 Cats</button>
+        </div>
+        <div class="guide-grid" id="guide-grid"></div>
+      </div>
+    </section>
+
+    <!-- Visit Counter -->
+    <section class="section">
+      <div class="section-inner">
+        <div class="visit-box">
+          <p id="visit-message"></p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> 🌷Sarah Itse🌷 Nigeria</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="happy.js" defer></script>
+</body>
+</html>

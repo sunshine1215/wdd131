@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Happy Pets - send us your pet care questions or feedback.">
+  <meta name="author" content="Sarah Itse">
+  <title>Happy Pets - Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">🐾 Happy Pets</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="care.html">Care Guide</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <h1>Contact Us</h1>
+      <p>Have any question about your pet? We'd love to help!</p>
+    </section>
+
+    <section class="section">
+      <div class="section-inner">
+        <form class="contact-form" id="contact-form" method="get" action="#">
+
+          <div class="form-group">
+            <label for="owner-name">Your Name</label>
+            <input type="text" id="owner-name" name="owner-name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="owner-email">Email Address</label>
+            <input type="email" id="owner-email" name="owner-email" placeholder="Enter your email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="pet-type">Pet Type</label>
+            <select id="pet-type" name="pet-type" required>
+              <option value="" disabled selected>Select your pet...</option>
+              <option value="dog">Dog</option>
+              <option value="cat">Cat</option>
+              <option value="both">Both</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Ask us anything about pet care..." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </div>
+
+        </form>
+
+        <div class="form-confirmation" id="form-confirmation" style="display:none;">
+          <p id="confirmation-message"></p>
+          <button class="btn btn-primary" id="reset-btn">Send Another Message</button>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> 🌷Sarah Itse🌷 Nigeria</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="happy.js" defer></script>
+</body>
+</html>

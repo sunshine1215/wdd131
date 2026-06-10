@@ -1,166 +1,33 @@
-
-/* RESET */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-/* BODY */
 body {
-  font-family: "Oswald", sans-serif;
-  background: #f4f4f4;
-  color: #222;
-  line-height: 1.5;
-}
-
-/* HEADER */
-header {
-  background: #0f4c81;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-}
-
-/* COURSE TITLE */
-#course-title {
-  font-weight: 600;
-  display: block;
-  margin-top: 0.5rem;
-}
-
-/* NAVIGATION (FLEX REQUIRED) */
-nav {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  background: #333;
-  padding: 0.75rem;
-  flex-wrap: wrap;
-}
-
-/* NAV LINKS */
-nav a {
-  color: white;
-  text-decoration: none;
-  font-weight: 400;
-}
-
-nav a:hover {
-  color: yellow;
-}
-
-main {
-   display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 20px;
-    align-items: flex-start;
-    max-width: 1200px;
-    margin: 20px auto;
+    font-family: 'Lora', Georgia, serif;
+    line-height: 1.6;
+    color: #333;
     padding: 20px;
 }
 
-.card {
-    background: white;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-    overflow: hidden;
+h1, h2, h3 {
+    font-family: 'Nunito', Arial, sans-serif;
+    margin-bottom: 1rem;
 }
 
-.card h2 {
-    background: #0b4f7d;
-    color: white;
-    text-align: center;
-    padding: 15px;
+ul, ol {
+    list-style: none;
 }
 
-.content {
-    align-items: flex-start;
-    gap: 20px;
-    padding: 20px;
-    margin-left: 20px;
-    align-self: flex-start;
-
+a {
+    text-decoration: none;
+    color: #2a7a2a;
 }
 
-.content img {
-    width: 180px;
-}
-
-.country {
-    padding: 20px;
-}
-
-.country h3 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.country-content {
-    display: flex;
-    gap: 20px;
-    text-align: left;
-}
-
-.country-content img {
-    width: 120px;
+img {
+    max-width: 100%;
     height: auto;
-    border-radius: 6px;
-}
-
-.resources {
-    padding: 30px;
-}
-
-.resources ul {
-    padding-left: 20px;
-}
-
-.resources li {
-    margin-bottom: 15px;
-}
-/* IMAGE INSIDE CARD */
-section.card img {
-  width: 120px;
-  height: auto;
-  border-radius: 6px;
-  flex-shrink: 0;
-}
-
-/* TEXT INSIDE CARD */
-section.card h2,
-section.card h3,
-section.card p {
-  margin: 0;
-}
-
-/* H1 */
-h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-/* FOOTER */
-footer {
-  margin-top: 2rem;
-  background: #0f4c81;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-}
-
-/* FOOTER LINKS */
-footer a {
-  color: white;
-  text-decoration: none;
-  margin: 0 0.5rem;
-}
-
-footer a:hover {
-  color: yellow;
-}
-
-/* FOOTER TEXT */
-footer p {
-  margin: 0.5rem 0;
+    border-radius: 8px;
+    margin-top: 1rem;
 }

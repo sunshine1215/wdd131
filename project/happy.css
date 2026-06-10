@@ -1,0 +1,448 @@
+/* Happy Pets - Main Stylesheet */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5fff6;
+  color: #1e2a1e;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+a {
+  color: #3a7d44;
+  text-decoration: none;
+}
+
+a:hover { color: #e07b39; }
+
+/* ── HEADER ── */
+header {
+  background-color: #3a7d44;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 1rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  color: white;
+  font-weight: 600;
+  font-size: .95rem;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  text-decoration: underline;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+/* ── BUTTONS ── */
+.btn {
+  display: inline-block;
+  padding: .7rem 1.6rem;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: .95rem;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #e07b39;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #c96a2a;
+  color: white;
+}
+
+.btn-filter {
+  background-color: white;
+  color: #3a7d44;
+  border: 2px solid #3a7d44;
+  border-radius: 50px;
+  padding: .4rem 1.2rem;
+  font-size: .9rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.btn-filter.active,
+.btn-filter:hover {
+  background-color: #3a7d44;
+  color: white;
+}
+
+/* ── HERO ── */
+.hero {
+  background-color: #3a7d44;
+  color: white;
+  padding: 4rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.hero-text { max-width: 480px; }
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: .7rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  opacity: .9;
+}
+
+.hero-image {
+  max-width: 380px;
+  width: 100%;
+}
+
+/* ── PAGE HERO ── */
+.page-hero {
+  background-color: #3a7d44;
+  color: white;
+  text-align: center;
+  padding: 2.5rem 1.5rem;
+}
+
+.page-hero h1 {
+  font-size: 2rem;
+  margin-bottom: .3rem;
+}
+
+.page-hero p { opacity: .85; }
+
+/* ── SECTIONS ── */
+.section { padding: 3rem 1.5rem; }
+
+.section-inner {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.6rem;
+  color: #3a7d44;
+  margin-bottom: .4rem;
+}
+
+.section-sub {
+  color: #4a5e4a;
+  margin-bottom: 1.8rem;
+}
+
+/* ── CARE CARDS ── */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.2rem;
+}
+
+.care-card {
+  background-color: white;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 1.3rem;
+}
+
+.care-card:hover { transform: translateY(-4px); }
+.care-card .icon { font-size: 2rem; margin-bottom: .5rem; }
+.care-card h3 { font-size: 1rem; margin-bottom: .3rem; }
+.care-card p { font-size: .88rem; color: #4a5e4a; }
+
+/* ── TIPS ── */
+.tips-section { background-color: #e8f5eb; }
+
+.tips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.tip-item {
+  background-color: white;
+  border-left: 4px solid #3a7d44;
+  padding: 1rem 1.2rem;
+}
+
+.tip-item h4 { color: #3a7d44; margin-bottom: .3rem; }
+.tip-item p { font-size: .88rem; color: #4a5e4a; }
+
+/* ── FACT BOX ── */
+.fact-box {
+  background-color: white;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#fact-text {
+  font-size: 1.05rem;
+  color: #4a5e4a;
+  margin-bottom: 1.2rem;
+}
+
+/* ── GUIDE GRID ── */
+.filter-btns {
+  display: flex;
+  gap: .8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.guide-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.4rem;
+}
+
+.guide-card {
+  background-color: white;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.guide-card:hover { transform: translateY(-4px); }
+
+.guide-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.guide-card-body { padding: 1.1rem; }
+.guide-card-body h3 { font-size: 1rem; margin-bottom: .3rem; }
+.guide-card-body p { font-size: .88rem; color: #4a5e4a; }
+
+.pet-tag {
+  display: inline-block;
+  font-size: .75rem;
+  font-weight: 700;
+  padding: .2rem .6rem;
+  border-radius: 20px;
+  margin-bottom: .5rem;
+}
+
+.tag-dog { background-color: #dbeafe; color: #1e40af; }
+.tag-cat { background-color: #fce7f3; color: #9d174d; }
+
+/* ── VISIT BOX ── */
+.visit-box {
+  background-color: #e8f5eb;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  text-align: center;
+  font-weight: 600;
+  color: #2d6235;
+}
+
+/* ── CONTACT FORM ── */
+.contact-form {
+  background-color: white;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.form-group { margin-bottom: 1.3rem; }
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: .4rem;
+  color: #2d6235;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: .6rem .9rem;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-family: inherit;
+  background-color: #e8f5eb;
+  color: #1e2a1e;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #3a7d44;
+  background-color: white;
+}
+
+.form-group textarea { resize: vertical; }
+
+.form-confirmation {
+  background-color: #e8f5eb;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+#confirmation-message {
+  font-size: 1.1rem;
+  color: #2d6235;
+  font-weight: 600;
+  margin-bottom: 1.2rem;
+}
+
+/* ── REFERENCES ── */
+.section-inner ul { padding-left: 1.5rem; }
+.section-inner li { margin-bottom: .5rem; }
+
+/* ── FOOTER ── */
+footer {
+  background-color: #1e2a1e;
+  color: rgba(255,255,255,.7);
+  text-align: center;
+  padding: 1.5rem;
+  font-size: .85rem;
+  line-height: 2;
+}
+
+footer a { color: rgba(255,255,255,.8); }
+footer a:hover { color: white; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: .8rem;
+  }
+
+  .nav-links.open { display: flex; }
+  .hamburger { display: block; }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 2.5rem 1.2rem;
+  }
+
+  .hero-image { max-width: 100%; }
+}
+
+/* ── QUIZ ── */
+.quiz-box {
+  background-color: white;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 10px;
+  padding: 2rem;
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.quiz-progress {
+  font-size: .85rem;
+  font-weight: 700;
+  color: #4a5e4a;
+  margin-bottom: .8rem;
+}
+
+.quiz-box h3 {
+  font-size: 1.1rem;
+  color: #1e2a1e;
+  margin-bottom: 1.2rem;
+}
+
+.quiz-options {
+  display: flex;
+  flex-direction: column;
+  gap: .6rem;
+  margin-bottom: 1rem;
+}
+
+.quiz-option {
+  background-color: #e8f5eb;
+  border: 1.5px solid #c8dfc9;
+  border-radius: 8px;
+  padding: .7rem 1rem;
+  font-size: .95rem;
+  font-family: inherit;
+  color: #1e2a1e;
+  cursor: pointer;
+  text-align: left;
+  transition: background-color .2s;
+}
+
+.quiz-option:hover { background-color: #c8dfc9; }
+.quiz-option.correct { background-color: #c8dfc9; border-color: #3a7d44; font-weight: 700; }
+.quiz-option.incorrect { background-color: #fde8e8; border-color: #d9534f; font-weight: 700; }
+.quiz-option:disabled { cursor: default; }
+
+.quiz-feedback {
+  font-size: .9rem;
+  font-weight: 600;
+  min-height: 1.4rem;
+  margin-bottom: .8rem;
+}
+
+.quiz-feedback.correct { color: #3a7d44; }
+.quiz-feedback.incorrect { color: #d9534f; }
+
+#quiz-result { text-align: center; }
+#quiz-result h3 { font-size: 1.4rem; margin-bottom: .5rem; }
+#quiz-result p { color: #4a5e4a; margin-bottom: .5rem; }

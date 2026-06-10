@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Happy Pets - Your guide to happy, healthy dogs and cats.">
+  <meta name="author" content="Sarah Itse">
+  <title>Happy Pets - Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;600&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="happy.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <div class="logo">🐾 Happy Pets</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="care.html">Care Guide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle navigation">&#9776;</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Happy Pets, Happy Life</h1>
+        <p>Your trusted guide for dog and cat care. Learn feeding tips, grooming routines, health advice, and more.</p>
+        <a href="care.html" class="btn btn-primary">Explore Care Guide</a>
+      </div>
+      <div class="hero-image">
+        <img src="https://images.unsplash.com/photo-1548767797-d8c844163c4c?w=500&auto=format&fit=crop" alt="Happy dog and cat together" loading="lazy">
+      </div>
+    </section>
+
+    <!-- Care Cards -->
+    <section class="section">
+      <div class="section-inner">
+        <h2>Pet Care Essentials</h2>
+        <p class="section-sub">Everything your pet needs to live a happy, healthy life.</p>
+        <div class="cards-grid" id="cards-grid"></div>
+      </div>
+    </section>
+
+    <!-- Tips Section -->
+    <section class="section tips-section">
+      <div class="section-inner">
+        <h2>Quick Health Tips</h2>
+        <p class="section-sub">Simple habits that make a big difference.</p>
+        <div class="tips-grid" id="tips-grid"></div>
+      </div>
+    </section>
+
+    <!-- Pet Care Quiz -->
+    <section class="section">
+      <div class="section-inner">
+        <h2>Pet Care Quiz 🧠</h2>
+        <p class="section-sub">Test your knowledge about responsible pet ownership!</p>
+
+        <div class="quiz-box" id="quiz-box">
+
+          <!-- Question -->
+          <div id="quiz-question-wrap">
+            <p class="quiz-progress" id="quiz-progress">Question 1 of 5</p>
+            <h3 id="quiz-question"></h3>
+            <div class="quiz-options" id="quiz-options"></div>
+            <p class="quiz-feedback" id="quiz-feedback"></p>
+            <button class="btn btn-primary" id="quiz-next" style="display:none;">Next Question →</button>
+          </div>
+
+          <!-- Result -->
+          <div id="quiz-result" style="display:none;">
+            <h3>Quiz Complete! 🎉</h3>
+            <p>You scored <strong id="quiz-score"></strong></p>
+            <p id="quiz-message"></p>
+            <br>
+          <button class="btn btn-primary" id="quiz-restart">Try Again</button>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; <span id="footer-year"></span> 🌷Sarah Itse🌷 Nigeria</p>
+    <p>Last Modified: <span id="last-modified"></span></p>
+    <p><a href="references.html">References</a></p>
+  </footer>
+
+  <script src="happy.js" defer></script>
+</body>
+</html>
